@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
     
 
     
@@ -26,8 +28,7 @@
     <header>
 
         <section class="head">                
-                <img src="img/Logo.svg" alt="pokemon Logo" > 
-               
+                <img src="img/Logo.svg" alt="pokemon Logo" >                
                     
                 </iframe>
                                             
@@ -39,23 +40,55 @@
 
    <section class="grid">
        <div class="pokemon"> 
-           <img src="img/eevee.png" alt="eevee" width="50%">
+
+        <div class="slider-for">
+            <div><img src="img/eevee.png" alt="eevee"></div>
+            <div><img src="img/Vaporeon.png" alt="vaporeon"></div>
+            <div><img src="img/jolteon.png" alt="vaporeon"></div>
+            <div><img src="img/Flareon.png" alt="vaporeon"></div>
+          </div>
+
        </div>
        <div class="card">
-        <h2><br><b>Eevee (イーブイIibui ) </b>é um Pokémon do tipo Normal
+
+<!---Teste slider nav-->
+
+    <div class="slider-nav">
+        <div>
+            <h2><br><b>Eevee (イーブイIibui ) </b>é um Pokémon do tipo Normal
          introduzido na Geração I. É conhecido por ser o Pokémon com o maior número de possibilidades de evolução (8),
          devido à sua composição genética instável.</h2>
+        </div>
+
+        <div>
+            <h2><br><strong>Vaporeon</strong><br> compartilha traços físicos com animais aquáticos e criaturas terrestres na aparência. Seu corpo é azul claro com uma gola branca em volta do pescoço. Vaporeon tem barbatanas semelhantes a orelhas creme-amareladas feitas de teias em ambos os lados de sua cabeça, juntamente com uma terceira na parte superior. Vaporeon tem sulcos azuis que 
+                percorrem o comprimento de sua coluna e até a barbatana caudal. A cauda lembra a de um golfinho ou baleia.</h2>
+        </div>
+<!------------------------------------------->        
+    </div>
+
+
+        <!--<h2><br><b>Eevee (イーブイIibui ) </b>é um Pokémon do tipo Normal
+         introduzido na Geração I. É conhecido por ser o Pokémon com o maior número de possibilidades de evolução (8),
+         devido à sua composição genética instável.</h2> -->
+
        </div>
        
     </section>
 
-    
-    <div class="single-item">
+
+   <!-- <section class="carousel">
+        
+        <div class="single-item">
         <div><img src="img/Vaporeon.png" alt="vaporeon"></div>
         <div><img src="img/jolteon.png" alt="vaporeon"></div>
         <div><img src="img/Flareon.png" alt="vaporeon"></div>
       </div>
 
+    </section>
+
+   -->
+    
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -68,16 +101,37 @@
 
         function playAudio(){
             x.play();
-        }
+            
+        }        
         
 
     </script>
      <script type="text/javascript">
-        $(document).ready(function(){
-            $('.single-item').slick();
-          });       
 
-       
+        $(document).ready(function(){
+
+            $('.slider-for').slick({
+                slidesToShow:1,
+                slidesToScroll:1,
+                dots:true,
+                arrows:true,
+                fade:true,
+                asNavFor: '.slider-nav'
+            });
+          });
+
+        $('.slider-nav').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            arrows:false,
+            fade:true,
+            centerMode: true,
+            focusOnSelect: true
+        });   
+
+
 
       </script>
 

@@ -55,6 +55,7 @@ body{
     box-shadow: 10px 5px 5px rgba(19, 19, 31, 0.05);
 }
 
+
 .grid{
 display: grid;  
 grid-template-columns: 50% 50%;
@@ -62,12 +63,24 @@ grid-template-columns: 50% 50%;
 }
 
 .pokemon{
+    margin-left: 250px;
     background-image: url(img/Clouds.svg);
     background-size: contain;
     background-position: top;
     background-repeat:no-repeat;
+    padding-top: 150px;
+    padding-left: 100px;
     width: auto;        
     text-align: center;    
+}
+
+
+
+
+.slider-for{
+    position: absolute;
+    width: 500px;
+    
 }
 
 @media only screen and (max-width: 800px) {
@@ -75,17 +88,29 @@ grid-template-columns: 50% 50%;
     .card{        
         position: absolute;
         width: 400px;
-        bottom: -10px;
+        bottom: -150px;
         margin-left: 20px;
         padding-top: 50px;
     }
     img {
-        margin-left: 70px;
+        margin-left: 50px;
         position: relative;
-        width: 300px;
+        width: 400px;
+    }
+    .pokemon{
+        margin-left: 0px;
+        position: absolute;
+        right:0;
+        z-index: 1;
+        width: auto;        
+        text-align: center; 
+        padding-top: 0;
+        padding-left: 0;
     }
 
-    .pokemon{
-        z-index: 1;
+    .slick-next{
+        position: absolute;
+        margin-right: 80px;
+        
     }
   }
