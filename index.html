@@ -10,41 +10,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    
     <title>Eevolutions</title>
+
 </head>
 <body>
+    <audio id="pika">
+        <source src="snd/the-pikachu-song.mp3" type="audio/mp3">
+    </audio>
     
     <header>
 
         <section class="head">                
-                <img src="img/Logo.svg" alt="pokemon Logo" >                
-                <img src="img/Pikachu.svg" alt="pikachu" id="pikachu" >
+                <img src="img/Logo.svg" alt="pokemon Logo" > 
+               
+                    
+                </iframe>
+                                            
+                <img src="img/Pikachu.svg" onclick= "playAudio()" alt="pikachu" id="pikachu" >
+                
         </section>       
 
     </header>
 
-    <section class="main"> 
-
-       <img src="img/Clouds.svg" alt="nuvens">  
-
-       <div class="card">
-            <h1>
-                Evoluções Eevee
-            </h1> 
-            <h2>
-                <b>Eevee (イーブイIibui ) </b> é um Pokémon do tipo Normal introduzido na Geração I. <br> É conhecido por ser o Pokémon com o maior número de possibilidades de evolução 
-                (8), devido à sua composição genética instável.
-            </h2>
+   <section class="grid">
+       <div class="pokemon"> 
+           <img src="img/eevee.png" alt="eevee" width="50%">
        </div>
-          
-        <div class="pokemons">
-            <img src="img/eevee.png" alt="eevee">
-        </div>
-        
+       <div class="card">
+        <h2><br><b>Eevee (イーブイIibui ) </b>é um Pokémon do tipo Normal
+         introduzido na Geração I. É conhecido por ser o Pokémon com o maior número de possibilidades de evolução (8),
+         devido à sua composição genética instável.</h2>
+       </div>
+       
     </section>
-    
 
 
-    
+    <script>
+        var x = document.getElementById("pika");
+
+        function playAudio(){
+            x.play();
+        }
+        
+    </script>
 </body>
 </html>
