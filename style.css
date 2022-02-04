@@ -121,9 +121,9 @@ grid-template-columns: 50% 50%;
 @media only screen and (max-width: 1200px) {
 
     .card{        
-        position: absolute;
+        position: relative;
         width: 400px;
-        top:450px ;
+        top:300px ;
         margin-left: 20px;
         padding-top: 50px;
     }
