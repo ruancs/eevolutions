@@ -122,19 +122,22 @@ grid-template-columns: 50% 50%;
 
     .card{        
         position: relative;
-        width: 400px;
-        top:300px ;
-        margin-left: 0px;
+        width:380px;
+        top:300px;  
+        left:30px;
+        right:10px;  
         padding-top: 50px;
     }
+    
     img {
         margin-left: 50px;
         position: relative;
         width: 400px;
     }
     .pokemon{
-        margin-left: 0px;
+        
         position: absolute;
+        margin:0 auto;
         right:0;
         z-index: 1;
         width: auto;        
