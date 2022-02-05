@@ -40,6 +40,21 @@ p{
     background-color: #ff11ccdc;
 }
 
+.dark{
+    background-color: #444546;
+}
+
+.grass{
+    background-color: rgb(71, 219, 83);
+}
+
+.ice{
+    background-color: aqua;
+}
+
+.fairy{
+    background-color: pink;
+}
 
 body{
     text-align: center;
