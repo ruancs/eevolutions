@@ -66,7 +66,7 @@ body{
 }
 
 .head{
-    position: relative;
+    
     background: linear-gradient(180deg, #F5DB13 0%, #F2B807 100%);
     box-shadow: 0px 15px 10px rgba(19, 19, 31, 0.05);
     display:flex;
@@ -80,7 +80,7 @@ body{
 }
 
 .card{
-    position: relative;       
+          
     font-family: 'Karla', sans-serif;
     font-weight: 800;
     font-size: large;
@@ -122,23 +122,23 @@ grid-template-columns: 50% 50%;
 
 @media only screen and (max-width: 800px) {
 
-    .card{        
-        position: relative;
-        width:170%;
-        top:300px;  
+
+    .card{   
+        position: absolute;
+        margin: 0 auto;       
+        width:90%;
+        top:28rem;  
         padding-top: 50px;
     }
     
     img {
         margin-left: 50px;
-        position: relative;
+        
         width: 400px;
     }
     .pokemon{
-        
-        position: absolute;
-        margin:0 auto;
-        right:0;
+        width: 29rem !important;
+        margin: 0 auto;             
         z-index: 1;
         width: auto;        
         text-align: center; 
@@ -150,6 +150,12 @@ grid-template-columns: 50% 50%;
         
         position: absolute;
         margin-right: 80px;
+        
+    }
+
+
+    .slider-for{
+        width: 29rem !important;
         
     }
   }
