@@ -168,6 +168,11 @@ footer{
         margin-top: -5rem;
         padding-top: 50px;
     }
+
+    #logo{
+        width: 200px !important;
+        margin-left: 5rem;
+    }
     
     img {
         margin-left: 50px;
