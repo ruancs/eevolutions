@@ -8,8 +8,9 @@ link da página (em construção) : https://ruancs.github.io/eevolutions/
 
 - [x]  criação de layout
   - [x]  desktop
-  - [ ]  responsivo
+  - [x]  responsivo
 - [x]  inserir slide com evoluções
-- [ ]  Alterar cor de fundo conforme passam as evoluções
+- [x]  transições de slides suaves 
+- [ ]  ajustes finos
 
 ![image](https://user-images.githubusercontent.com/19825224/152456838-ab189257-2edd-448d-8438-1c7ee606050f.png)
